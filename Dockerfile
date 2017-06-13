@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y libgc-dev libboost1.55-all-dev libxerce
 RUN mkdir -p /root/phc
 COPY . /root/phc
 RUN cd /root/phc
-RUN touch src/generated/*
 RUN touch Makefile.in configure Makefile
 RUN touch libltdl/aclocal.m4 libltdl/configure libltdl/Makefile.in libltdl/Makefile
 
