@@ -69,7 +69,6 @@ void Compile_C::run (IR::PHP_script* in, Pass_manager* pm)
 	new_arg (args) << "-I" << php_path << "/include/php/Zend";
 	new_arg (args) << "-L" << php_path << "/lib";
 	new_arg (args) << "-Wl,-R" << php_path << "/lib";
-	new_arg (args) << "-lphp5";
 	new_arg (args) << "-xc";
 	new_arg (args) << "-";
 
@@ -98,6 +97,7 @@ void Compile_C::run (IR::PHP_script* in, Pass_manager* pm)
 		new_arg (args) << "-o" << pm->args_info->output_arg;
 	}
 
+	new_arg (args) << "-lphp5";
 
 	// copy it into argument list
 	char** argv;

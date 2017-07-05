@@ -18678,7 +18678,7 @@ case $boost_cv_lib_regex in #(
   (no) $as_echo "$as_me: failed program was:" >&5
 sed 's/^/| /' conftest.$ac_ext >&5
 
-    as_fn_error $? "cannot find the flags to link with Boost regex" "$LINENO" 5
+    as_fn_error $? "Acannot find the flags to link with Boost regex" "$LINENO" 5
     ;;
 esac
 BOOST_REGEX_LDFLAGS=$boost_cv_lib_regex_LDFLAGS
@@ -19255,7 +19255,7 @@ case $boost_cv_lib_regex in #(
   (no) $as_echo "$as_me: failed program was:" >&5
 sed 's/^/| /' conftest.$ac_ext >&5
 
-    as_fn_error $? "cannot find the flags to link with Boost regex" "$LINENO" 5
+    as_fn_error $? "Bcannot find the flags to link with Boost regex" "$LINENO" 5
     ;;
 esac
 BOOST_REGEX_LDFLAGS=$boost_cv_lib_regex_LDFLAGS
